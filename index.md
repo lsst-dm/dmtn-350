@@ -6,8 +6,8 @@ This tech note describes how to setup a LSST Butler at iDAC to be used with the 
 
 ## Prepare a Postgres DB
 
-Setup a Postgres DB with a recent version of Postgres such as 17.5. `btree_gist`
-extension needs to be activated using the following command
+Setup a Postgres DB with a recent version of Postgres such as 17.5. Extension
+`btree_gist` needs to be activated using the following command
 
 ```
 CREATE EXTENSION IF NOT EXISTS btree_gist;
