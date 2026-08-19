@@ -63,8 +63,8 @@ This method will store to the database with file paths relative to your butler r
 Alse see the `buter.yaml` below. To use this method, run the following command:
 
 ```
-uv run python -m lsst.butler_transform.releases.dp2.import_dp2 --mini <dp2-export> \
-    schema_name postgresql://192.168.0.100:5432/lsstdb1
+uv run python -m lsst.butler_transform.releases.dp2.import_dp2 --mini \
+    <dp2-export> schema_name postgresql://192.168.0.100:5432/lsstdb1
 ```
 
 - `--mini`: Set up repository for the “early DP2” release instead of “full” DP2 release.
@@ -82,9 +82,9 @@ https://github.com/lsst-dm/butler_transform/pull/22/changes.
 Using the above example from the FrDF (so the mapping parameter in CLI is `frdf`)
 
 ```
-uv run python -m lsst.butler_transform.releases.dp2.import_dp2 --mini <dp2-export> \
+uv run python -m lsst.butler_transform.releases.dp2.import_dp2 --mini \
     --file-map frdf \
-    schema_name postgresql://192.168.0.100:5432/lsstdb1
+    <dp2-export> schema_name postgresql://192.168.0.100:5432/lsstdb1
 ```
 
 ## Create Butler Repo
