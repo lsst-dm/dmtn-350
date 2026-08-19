@@ -137,7 +137,7 @@ registry:
     datastores: lsst.daf.butler.registry.bridge.monolithic.MonolithicDatastoreRegistryBridgeManager
     dimensions: lsst.daf.butler.registry.dimensions.static.StaticDimensionRecordStorageManager
     opaque: lsst.daf.butler.registry.opaque.ByNameOpaqueTableStorageManager
-  namespace: dp2
+  namespace: schema_name
 ```
 
 If your `butler.yaml` is stored in a webdav store, you will need to setup environment
